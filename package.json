@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "scripts": {
     "deploy": "sls deploy",
-    "invoke-local": "sls invoke local -f mintReward",
+    "invoke": "sls invoke -f mintReward",
+    "invoke:local": "sls invoke local -f mintReward",
     "remove": "sls remove"
   },
+  "dependencies": {
+    "ethers": "^5.4.0"
+  },
   "devDependencies": {
-    "ethers": "^5.4.0",
     "serverless": "^2.48.1"
   }
 }
