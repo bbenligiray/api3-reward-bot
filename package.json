@@ -1,0 +1,13 @@
+{
+  "name": "api3-reward-bot",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy": "sls deploy",
+    "invoke-local": "sls invoke local -f mintReward",
+    "remove": "sls remove"
+  },
+  "devDependencies": {
+    "ethers": "^5.4.0",
+    "serverless": "^2.48.1"
+  }
+}

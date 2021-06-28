@@ -1,0 +1,14 @@
+service: api3-reward-bot
+
+provider:
+  name: aws
+  region: us-east-1
+  stage: dev
+  runtime: nodejs12.x
+  environment: ${file(secrets.json)}
+
+functions:
+  mintReward:
+    handler: ./src/index.mintReward
+    events:
+      - schedule: rate(1 hour)
